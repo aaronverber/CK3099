@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BackgroundStars.js">
+    <Files>
+      <File FileName="Assets\Scripts\BackgroundStars.js" Line="15" Column="17" />
+      <File FileName="Assets\Scripts\FireForward.js" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Scripts\Camera Scripts\SmoothFollow.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerMovement.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Bullet.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CameraFollow.js" Line="10" Column="79" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
