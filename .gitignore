@@ -9,6 +9,7 @@ Temp
 *.pidb
 *.userprefs
 
+Builds/
 Library/cache/*
 Library/metadata/*
 Library/previews/*
