@@ -1,14 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Bullet.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ScrollUVFar.js">
     <Files>
-      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="7" Column="33" />
-      <File FileName="Assets\Scripts\PlayerMovement.js" Line="16" Column="32" />
-      <File FileName="Assets\Scripts\Bullet.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\ScrollUVClose.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ScrollUVFar.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CameraFollow.cs" Line="17" Column="81" />
-      <File FileName="Assets\Scripts\FireForward.cs" Line="6" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
