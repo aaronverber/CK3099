@@ -46,11 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BackgroundStars.js" />
-     <Compile Include="Assets\Scripts\Bullet.js" />
-     <Compile Include="Assets\Scripts\CameraFollow.js" />
-     <Compile Include="Assets\Scripts\FireForward.js" />
-     <Compile Include="Assets\Scripts\PlayerMovement.js" />
      <Compile Include="Assets\Scripts\ScrollUVClose.js" />
      <Compile Include="Assets\Scripts\ScrollUVFar.js" />
  <Reference Include="UnityEngine.UI">
