@@ -5,13 +5,14 @@
  	
 
 function Start () {
-	
+
 	
 }
 
 function Update () {
 	var viewPos01 : Vector3 = camera.WorldToViewportPoint(starLayer01.transform.position);
 	var viewPos02 : Vector3 = camera.WorldToViewportPoint(starLayer02.transform.position);
+	Debug.Log(viewPos01.x);
 	if(viewPos01.x <= -1.0){
 		viewPos01.x = 1.0;
 		var newViewPos01Left : Vector3 = camera.ViewportToWorldPoint(viewPos01); 

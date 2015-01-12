@@ -13,7 +13,6 @@ function Start () {
 }
 
 function FixedUpdate () {
-
 	accel = Input.GetAxis("Vertical") * thrust;
 	rotation = Input.GetAxis("Horizontal") * -(rotationSpeed);
 	radRotation = (rigidbody2D.rotation * (Mathf.PI / 180));

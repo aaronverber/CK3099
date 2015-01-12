@@ -51,6 +51,8 @@
      <Compile Include="Assets\Scripts\CameraFollow.js" />
      <Compile Include="Assets\Scripts\FireForward.js" />
      <Compile Include="Assets\Scripts\PlayerMovement.js" />
+     <Compile Include="Assets\Scripts\ScrollUVClose.js" />
+     <Compile Include="Assets\Scripts\ScrollUVFar.js" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/aaron_000/Documents/CK3099/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
