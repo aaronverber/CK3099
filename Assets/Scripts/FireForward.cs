@@ -6,6 +6,8 @@ public class FireForward : MonoBehaviour {
 	public GameObject bullet;
 	TargetEnemies te;
 	float distanceToEnemy;
+	bool canShoot;
+	float reloadTime;
 
 	void Start() {
 		te = gameObject.GetComponent<TargetEnemies>();
@@ -21,12 +23,21 @@ public class FireForward : MonoBehaviour {
 			distanceToEnemy = Vector2.Distance (transform.position, te.selectedTarget.transform.position);
 		}
 		if (distanceToEnemy <= 5.0) {
-			FireAtTarget ();
+			if(canShoot == true){
+				FireAtTarget ();
+			}
+			reloadTime += Time.deltaTime;
+			if(reloadTime >= 0.25f){
+				canShoot = true;
+				reloadTime = 0.0f;
+			}
+			else{
+				canShoot = false;
+			}
 		}
 	}
 
 	void FireAtTarget(){
-
 		Instantiate(bullet, transform.position, transform.rotation);
 		Physics2D.IgnoreCollision(bullet.collider2D, collider2D);
 	}
