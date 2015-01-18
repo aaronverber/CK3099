@@ -4,13 +4,15 @@ using System.Collections;
 public class FireForward : MonoBehaviour {
 
 	public GameObject bullet;
+	GameObject player;
 	TargetEnemies te;
 	float distanceToEnemy;
 	bool canShoot;
 	float reloadTime;
 
 	void Start() {
-		te = gameObject.GetComponent<TargetEnemies>();
+		player = GameObject.Find("Player");
+		te = player.GetComponent<TargetEnemies>();
 	}
 
 	// Update is called once per frame
@@ -19,7 +21,6 @@ public class FireForward : MonoBehaviour {
 		if (te.selectedTarget == null) {
 			return;
 		} else {
-
 			distanceToEnemy = Vector2.Distance (transform.position, te.selectedTarget.transform.position);
 		}
 		if (distanceToEnemy <= 5.0) {
