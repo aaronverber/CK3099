@@ -5,8 +5,8 @@ public class CameraFollow : MonoBehaviour {
 
 	public GameObject cameraPos;
 	public GameObject playerPos;
-	float minFov = 25f;
-	float maxFov = 150f;
+	float minFov = 40f;
+	float maxFov = 120f;
 	float sensitivity = 30f;
 
 	// Update is called once per frame
@@ -17,7 +17,6 @@ public class CameraFollow : MonoBehaviour {
 		fov += Input.GetAxis ("Mouse ScrollWheel") * -sensitivity;
 		fov = Mathf.Clamp (fov, minFov, maxFov);
 		Camera.main.fieldOfView = fov;
-		Debug.Log (fov);
 		if(Input.GetMouseButtonDown(2)){
 			fov = 70;
 			Camera.main.fieldOfView = fov;
