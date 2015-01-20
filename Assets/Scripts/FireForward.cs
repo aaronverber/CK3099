@@ -28,7 +28,7 @@ public class FireForward : MonoBehaviour {
 				FireAtTarget ();
 			}
 			reloadTime += Time.deltaTime;
-			if(reloadTime >= 0.25f){
+			if(reloadTime >= 0.4f){
 				canShoot = true;
 				reloadTime = 0.0f;
 			}
@@ -39,7 +39,7 @@ public class FireForward : MonoBehaviour {
 	}
 
 	void FireAtTarget(){
-		Instantiate(bullet, transform.position, transform.rotation);
+		GameObject newBullet = (GameObject)Instantiate(bullet, transform.position, transform.rotation);
 		Physics2D.IgnoreCollision(bullet.collider2D, collider2D);
 	}
 }

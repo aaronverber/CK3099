@@ -4,6 +4,7 @@ using System.Collections;
 public class Bullet : MonoBehaviour {
 
 	public float thrust = 10;
+	public float damageDealt = 1;
 	private GameObject player;
 	private PlayerMovement playerMovement;
 	private TargetEnemies te;

@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 10
-  damageDealt: 1
+  damageDealt: 3
 --- !u!212 &21263134
 SpriteRenderer:
   m_ObjectHideFlags: 1

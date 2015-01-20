@@ -23,11 +23,12 @@ public class ShieldBar : MonoBehaviour {
 	}
 
 	void drainShieldHealth(float damage){
-		hueShiftBase = (damageDealt / totalShieldHealth) * 140;
+		hueShiftBase = (damage / totalShieldHealth) * 150;
 		satShiftBase = 2;
 		if (shieldHealth > 1) {
 			shieldHealth -= damage;
-			hueShiftTotal = hueShiftBase * (totalShieldHealth - shieldHealth);
+			hueShiftTotal = hueShiftBase * ((totalShieldHealth - shieldHealth) / damage);
+			Debug.Log (hueShiftTotal);
 			renderer.material.SetFloat("_HueShift", hueShiftTotal);
 			renderer.material.SetFloat("_Sat", satShiftBase);
 		}
