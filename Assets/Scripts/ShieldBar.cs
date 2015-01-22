@@ -4,7 +4,7 @@ using System.Collections;
 public class ShieldBar : MonoBehaviour {
 
 	public float totalShieldHealth = 20;
-	private float shieldHealth;
+	public float shieldHealth;
 	private float damageDealt;
 	private float hueShiftBase;
 	private float hueShiftTotal;
@@ -17,6 +17,7 @@ public class ShieldBar : MonoBehaviour {
 	}
 
 	void Update(){
+		Debug.Log (shieldHealth);
 		if (shieldHealth >= totalShieldHealth) {
 			return;
 		} else {
@@ -45,7 +46,6 @@ public class ShieldBar : MonoBehaviour {
 		hueShiftBase = (amount / totalShieldHealth) * 150;
 		satShiftBase = 2;
 		hueShiftTotal = hueShiftBase * ((totalShieldHealth - shieldHealth) / amount);
-		Debug.Log (hueShiftTotal);
 		renderer.material.SetFloat("_HueShift", hueShiftTotal);
 		renderer.material.SetFloat("_Sat", satShiftBase);
 	}
@@ -56,7 +56,7 @@ public class ShieldBar : MonoBehaviour {
 			shiftShieldColor(damage);
 		}
 		else{
-			Destroy (gameObject);
+			gameObject.SetActive(false);
 		}
 	}
 
