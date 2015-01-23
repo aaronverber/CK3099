@@ -17,7 +17,6 @@ public class ShieldBar : MonoBehaviour {
 	}
 
 	void Update(){
-		Debug.Log (shieldHealth);
 		if (shieldHealth >= totalShieldHealth) {
 			return;
 		} else {
