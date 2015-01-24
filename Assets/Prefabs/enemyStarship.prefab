@@ -1,14 +1,133 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &189708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 489708}
+  - 212: {fileID: 21289708}
+  - 114: {fileID: 11489708}
+  - 50: {fileID: 5089708}
+  - 60: {fileID: 6089708}
+  m_Layer: 9
+  m_Name: enemyStarship
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &489708
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.26999998, y: -1.20000005, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!50 &5089708
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189708}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!60 &6089708
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189708}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Poly:
+    m_Paths:
+    - - {x: 1.07342744, y: -.170713171}
+      - {x: 1.11589241, y: -.0962156802}
+      - {x: 1.04922628, y: -.0620044768}
+      - {x: .409443498, y: -.0509270094}
+      - {x: .21705246, y: .027054185}
+      - {x: .208096415, y: .167384222}
+      - {x: .25028035, y: .291967541}
+      - {x: .177188933, y: .392270625}
+      - {x: .117125005, y: .395166725}
+      - {x: .0561348572, y: .296565861}
+      - {x: -.0934391394, y: .301177889}
+      - {x: -.123486288, y: .381323844}
+      - {x: -.180475652, y: .37839964}
+      - {x: -.23160544, y: .297788382}
+      - {x: -.19937779, y: .160458833}
+      - {x: -.236481756, y: .000522751128}
+      - {x: -.363591015, y: -.0464732796}
+      - {x: -1.04412973, y: -.0711257458}
+      - {x: -1.1099453, y: -.100324102}
+      - {x: -1.0784266, y: -.166340321}
+      - {x: -.619937897, y: -.276217461}
+      - {x: -.272216499, y: -.261287421}
+      - {x: -.083875306, y: -.387076169}
+      - {x: .0854916498, y: -.379123569}
+      - {x: .266259462, y: -.256020427}
+      - {x: .318522304, y: -.266271144}
+      - {x: .644924223, y: -.26990658}
+--- !u!114 &11489708
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e362db175484a4a488bf1bbc112221c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hullHealth: 20
+  shieldArray: {fileID: 127774, guid: 458e2f97307af874eb448ca9adf5c712, type: 2}
+--- !u!212 &21289708
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189708}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: 797741aee76f4e5409a4c9fecedde7b2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 0}
+  m_RootGameObject: {fileID: 189708}
   m_IsPrefabParent: 1
   m_IsExploded: 1
