@@ -1,11 +1,10 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class EnemyBehavior : MonoBehaviour {
 
 	public int hullHealth = 20;
 	public GameObject shieldArray;
-	public Color transparent = new Color (1f, 1f, 1f, 0.5f);
 	int[] rotationArray = new int[] { 0, 60, 120, 180, 240, 300};
 
 	void Start(){
@@ -24,5 +23,9 @@ public class EnemyBehavior : MonoBehaviour {
 			Destroy (other.gameObject);
 			Destroy (gameObject);
 		}
+	}
+
+	void OnDestroy(){
+		GameEventManager.TriggerEnemyDestroyed();
 	}
 }	

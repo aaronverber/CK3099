@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class ShieldArray : MonoBehaviour {
@@ -8,9 +8,7 @@ public class ShieldArray : MonoBehaviour {
 	private ShieldBar iSBScript;
 	private GameObject oSB;
 	private ShieldBar oSBScript;
-
-
-
+	
 	// Use this for initialization
 	void Start () {
 		foreach (Transform child in transform) {
