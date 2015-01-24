@@ -24,7 +24,7 @@ public class ShieldBar : MonoBehaviour {
 				rechargeShieldHealth (1);
 			}
 			rechargeCylce += Time.deltaTime;
-			if (rechargeCylce >= 0.4f) {
+			if (rechargeCylce >= 0.6f) {
 				chargeNow = true;
 				rechargeCylce = 0.0f;
 			} else {

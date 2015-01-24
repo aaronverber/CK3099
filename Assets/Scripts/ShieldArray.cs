@@ -17,7 +17,6 @@ public class ShieldArray : MonoBehaviour {
 			if(child.gameObject.name == "innerShieldBar"){
 				iSB = child.gameObject;
 				iSBScript = iSB.gameObject.GetComponent<ShieldBar>();
-				Debug.Log (iSB);
 			}
 			if(child.gameObject.name == "outerShieldBar"){
 				oSB = child.gameObject;

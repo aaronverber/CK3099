@@ -1,14 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ShieldBar.cs">
     <Files>
       <File FileName="Assets\Scripts\PlayerMovement.cs" Line="33" Column="8" />
       <File FileName="Assets\Scripts\CameraFollow.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FireForward.cs" Line="37" Column="5" />
-      <File FileName="Assets\Scripts\ShieldBar.cs" Line="62" Column="18" />
-      <File FileName="Assets\Scripts\EnemyBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Bullet.cs" Line="15" Column="15" />
-      <File FileName="Assets\Shaders\HSVDefault.shader" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ShieldBar.cs" Line="27" Column="28" />
+      <File FileName="Assets\Scripts\EnemyBehavior.cs" Line="25" Column="9" />
+      <File FileName="Assets\Scripts\Bullet.cs" Line="8" Column="28" />
+      <File FileName="Assets\Scripts\ShieldArray.cs" Line="8" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
