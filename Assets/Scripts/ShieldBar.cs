@@ -9,11 +9,14 @@ public class ShieldBar : MonoBehaviour {
 	private float hueShiftBase;
 	private float hueShiftTotal;
 	private float satShiftBase;
+	private float barLength;	
+	private float baseBarLength;
 	bool chargeNow;
 	float rechargeCylce;
 
 	void Start(){
 		shieldHealth = totalShieldHealth;
+		baseBarLength = transform.localScale.x;
 	}
 
 	void Update(){

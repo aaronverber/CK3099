@@ -41,6 +41,5 @@ public class FireForward : MonoBehaviour {
 	void FireAtTarget(){
 		GameObject newBullet = (GameObject)Instantiate(bullet, transform.position, transform.rotation);
 		Physics2D.IgnoreCollision(bullet.collider2D, collider2D);
-		audio.Play ();
 	}
 }
