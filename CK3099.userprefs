@@ -1,12 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FireForward.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Managers\MessageAreaUIManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\FireForward.cs" Line="43" Column="60" />
+      <File FileName="Assets\Scripts\ShieldArray.cs" Line="32" Column="30" />
+      <File FileName="Assets\Scripts\FireForward.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\EnemyBehavior.cs" Line="1" Column="1" />
-      <File FileName="Assets\Managers\GameEventManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Managers\EnemyManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Bullet.cs" Line="1" Column="1" />
+      <File FileName="Assets\Managers\GameEventManager.cs" Line="11" Column="3" />
+      <File FileName="Assets\Managers\MessageAreaUIManager.cs" Line="20" Column="5" />
+      <File FileName="Assets\Managers\EnemyManager.cs" Line="9" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
